@@ -1,0 +1,13 @@
+language: python
+python: 
+  - 3.4
+# install:
+script:
+  - echo "hello"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: main
